@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesorios/Collar-Madre-Tierra</title>
+    <link rel="stylesheet" href="estilo2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="./estilo2.css">
+	
+</head>
+<body>
+	<div class="hero">
+		<h1 class="texto">ACCESORIOS</h1>
+	</div>
+
+    <header>
+		<nav class="navegacion">
+			<ul class="menu">
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Nosotros.html">Quiénes Somos</a></li>
+				<li><a href="#">Artículos</a>
+					<ul class="submenu">
+						<li><a href="Accesorios.html">Accesorios</a></li>
+						<li><a href="Calzado.html">Calzado</a></li>
+						<li><a href="Ropa.html">Ropa</a></li>
+					</ul>
+				</li>
+				<li><a href="Contacto.html">Contacto</a></li>
+			</ul>
+		</nav>
+	</header>
+
+    <div class="producto1">
+        <div class="img-container">
+            <img id="imagebox" src="imagenes/arbol.jpeg">
+            <h2><b>Collar Madre Tierra</b></h2>
+            <div id="codigo">Código: Acc-45510</div>
+            <p>Collar Madre Tierra con cadena de acero inoxidable</p>
+            <p>Disponible en color: Rosa y Morado</p>
+            <h3>$MXN100.00</h3>
+        </div>
+        <div class="product-small-img">
+            <img src="imagenes/arbol.jpeg" onclick="myFuction(this)">
+            <img src="imagenes/arbol1.jpeg" onclick="myFuction(this)">
+            <img src="imagenes/arbol2.jpeg" onclick="myFuction(this)">
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        function myFuction(smallImg){
+            var fullImg=document.getElementById("imagebox");
+            fullImg.src=smallImg.src;
+        }
+    </script>
+
+
+</body>
+
+</html>
